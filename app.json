@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "Wakie - Будильник",
+    "slug": "barcode-alarm",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Нам нужен доступ к камере, чтобы сканировать штрих-коды",
+          "recordAudioAndroid": false
+        }
+      ],
+      [
+        "expo-av",
+        {
+          "microphonePermission": "Нам не нужен микрофон"
+        }
+      ],
+      [
+        "expo-sensors",
+        {
+          "motionPermission": "Motion Activity используется для контроля будильника"
+        }
+      ],
+      "expo-router"
+    ],
+    "platforms": ["ios", "android"]
+  }
+}
